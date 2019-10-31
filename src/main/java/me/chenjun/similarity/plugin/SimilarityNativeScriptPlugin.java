@@ -115,9 +115,9 @@ public class SimilarityNativeScriptPlugin extends Plugin implements ScriptPlugin
         int d = 0;
         for (int i = 0; i < l.length; i++) {
             tl = i;
-            char s1_c = s1.charAt(i);
+            char s1C = s1.charAt(i);
             for (int j = 0; j < t.length; j++) {
-                d = Math.min(Math.min(l[i], t[j]) + 1, tl + ((s1_c == s2.charAt(j)) ? 0 : 1));
+                d = Math.min(Math.min(l[i], t[j]) + 1, tl + ((s1C == s2.charAt(j)) ? 0 : 1));
                 tl = t[j];
                 l[i] = d;
                 t[j] = d;

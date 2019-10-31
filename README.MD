@@ -1,5 +1,8 @@
 没写测试，以es6.8.3为基础实现的 支持 hamming levenshtein ，有小问题请见谅
-
+````
+docker pull elasticsearch:6.8.3
+docker run --restart=always -d -p 9200:9200 -p 9300:9300 -e UseAVX=1  elasticsearch:6.8.3
+````
 安装 elasticsearch-plugin install file://${以/开头的绝对路径},注：file:后是三个/
 查询：
 ````
